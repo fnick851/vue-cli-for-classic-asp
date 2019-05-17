@@ -1,4 +1,8 @@
-# test_deploy
+# A Vue CLI project setup for Classic ASP
+
+This setup outputs one Classis ASP file that can be included in existing ASP projects/files. 
+
+Also suitable for other classic server side framework template integration if you wish to do so - just modify the vue.config.js.
 
 ## Project setup
 ```
