@@ -1,8 +1,6 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 
 module.exports = {
-    // options...
-    indexPath: "test.asp",
     publicPath: "",
     css: {
         extract: false
@@ -14,5 +12,13 @@ module.exports = {
                 template: 'public/index.html'
             })
         ]
+    },
+    indexPath: "include.asp",
+    pages: {
+        theme: {
+            entry: 'src/main.js',
+            template: 'public/index.html',
+            filename: 'include.asp'
+        }
     }
 }

@@ -2,7 +2,9 @@
 
 This setup outputs one Classis ASP file that can be included in existing ASP projects/files. 
 
-Also suitable for other classic server side framework template integration if you wish to do so - just modify the vue.config.js.
+Also suitable for other server-side framework template integration if you wish to do so - just modify the vue.config.js.
+
+Due to likely a bug with Vue CLI ([https://github.com/vuejs/vue-cli/issues/2327](https://github.com/vuejs/vue-cli/issues/2327)), "indexPath" rule is ignored in development mode. Thus I am using the "pages" rule to output a same file for development mode.
 
 ## Project setup
 ```
@@ -11,12 +13,12 @@ npm install
 
 ### Compiles and hot-reloads for development
 ```
-npm run serve
+npx vue-cli-service build --watch
 ```
 
 ### Compiles and minifies for production
 ```
-npm run build
+npx vue-cli-service build
 ```
 
 ### Run your tests
